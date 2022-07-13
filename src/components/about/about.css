@@ -1,0 +1,11 @@
+.imported-card{
+    display:flex;
+    max-width: 100%;
+    margin: 3rem auto;
+    justify-content: space-between;
+}
+
+
+.about-us{
+    padding-bottom: 20px;
+}

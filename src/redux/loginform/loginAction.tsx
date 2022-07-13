@@ -1,0 +1,14 @@
+import { LOGIN_SUCCESS, LOGOUT_SUCCESS } from "./loginTypes"
+
+
+export const getLogin = () => {
+    return({
+        type:LOGIN_SUCCESS
+    })
+}
+
+export const getLogout = () => {
+    return({
+        type:LOGOUT_SUCCESS
+    })
+}

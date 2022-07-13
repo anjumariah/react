@@ -1,0 +1,22 @@
+.loginPage {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-items: center;
+    margin:  3rem auto;
+}
+.loginPage h2{
+    text-align :center;
+}
+.loginPage input{
+    padding: .5rem;
+}
+
+.loginPage button{
+    padding: 1rem;
+    border-radius: 5%;
+    width: 50%;
+    margin:  auto ;
+    border-color: aliceblue;
+    background-color: rgb(47, 112, 52);
+}

@@ -1,0 +1,29 @@
+
+{
+     "imgArrayData":[
+    {"id":1,"im":"https://tse4.mm.bing.net/th?id=OIP.8gEX8Pyz2hreWVHIWG3t-AHaE8&pid=Api&P=0&w=278&h=186","cardTitle":"latest technology","cardDescription":"we use world wide technologies and special care"},
+  {"id":2,"im":"https://www.sath.nhs.uk/wp-content/uploads/2017/11/patient-2.jpg","cardTitle":"patient-centric care","cardDescription":"we use world wide technologies and special care"},
+  {"id":3,"im":"https://tse3.mm.bing.net/th?id=OIP.rjgMKo-1knj0xy_JVUE6cwHaEK&pid=Api&P=0&w=275&h=154","cardTitle":"ecofriendly","cardDescription":"we use world wide technologies and special care"}
+ ], 
+
+"footerLinksData":[
+    {"topic":"Quick links","link1":"find a doctor","link2":"book an appointmnet","link3":"admissions","link4":"careers","id":1},
+    {"topic":"Multispecialities","link1":"Anastheciaology","link2":"oncology","link3":"pediatrics","link4":"nephrology","id":2},
+    {"topic":"others","link1":"news&events","link2":"blogs","link3":"testimonials","link4":"facebook","id":3}
+],
+ 
+"homeItemsData" : [
+    {"icon":"Home","dropIcon":"enquiery","linkRef":"/","id":1},
+    {"icon":"Our Specialities","dropIcon":"doctors","linkRef":"/speciality","id":2},
+    {"icon":"About Us","dropIcon":"emergency","linkRef":"/about","id":3}
+
+    ],
+
+"formData" : [
+   { "fullname":"",
+    "email":"",
+    "details":""}
+]    
+}
+
+
