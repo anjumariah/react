@@ -34,6 +34,7 @@ export const fetchFooter  = () => {
     return (dispatch: any) => {
         dispatch(fetchFooterDataRequest)
         axios.get(
+            // "http://localhost:3000/footerLinksData"
             `${process.env.REACT_APP_SECRET_FOOTER_DATA}`
             )
        .then((response) => {

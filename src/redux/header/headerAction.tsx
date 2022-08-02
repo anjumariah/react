@@ -36,8 +36,10 @@ export const fetchHeader = () => {
             `${process.env.REACT_APP_SECRET_HOME_DATA}`
             )
         .then((response) => {
-          console.log(response);
+        //   console.log(response,"---------response in header----------");
           const headerData =response.data;
+        //   console.log(headerData,"----header--data----");
+          
           dispatch(fetchHeaderDataSuccess(headerData))
           
         })
@@ -47,3 +49,6 @@ export const fetchHeader = () => {
         })
     }
 }
+
+
+

@@ -26,33 +26,35 @@ const state = useSelector((state) => state.authReducerItem.adminInfo);
 
   const handleSubmit = (event) => {
     event.preventDefault();
- 
-      // if(state.email === email && state.password === password){
-      //   dispatch(getLogin());
-      //   history.push("/"); 
-      // }else{
-      //   console.log("Login Info don't match, please check");
-      // }
-      if( email && password){
-        dispatch(getLogin());
-        history.push("/"); 
-      }else{
-        console.log("Login Info don't match, please check");
-      }
+      // const token = localStorage.getItem('token')
+      // const loginData= {email:email,password:password, token: token}
 
       const loginData= {email:email,password:password}
       console.log(loginData);
-      axios.post('http://localhost:3000/auth/login',loginData)
+      axios.post('http://localhost:3005/auth/login',loginData)
       .then((res) => {
         console.log(res,"login infooooooooooooo");
-        localStorage.setItem("token",JSON.stringify(res.data.token))
+        localStorage.setItem("token",JSON.stringify(res.data.token));  
+        const userMail = res.data.userEmail 
+        const usePassword = res.data.usePassword
+
+        if( email===userMail && password===usePassword ){
+          dispatch(getLogin());
+          history.push("/"); 
+        }else{
+          alert("Not Registered User. Please signUp for login");
+        }
         
        } );
+    
   };
-
+ 
+  const HandleSignUp = () =>{
+    history.push("/signup");
+  }
   return(
     <div className='loginPage'>
-      <h2>AdminLoginPage</h2>
+      <h2>UserLoginPage</h2>
       <form onSubmit={handleSubmit} className='loginPage'>
         <input type="email" 
         placeholder = "Email"
@@ -64,7 +66,7 @@ const state = useSelector((state) => state.authReducerItem.adminInfo);
         value={password}
         onChange={(event)=> setPassword(event.target.value)}
         /><br/>
-        <button>LogIn</button>
+        <button>LogIn</button> <h3  onClick={HandleSignUp}>SignuP</h3>
       </form>
     </div>
   )

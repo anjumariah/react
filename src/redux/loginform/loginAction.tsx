@@ -12,3 +12,4 @@ export const getLogout = () => {
         type:LOGOUT_SUCCESS
     })
 }
+

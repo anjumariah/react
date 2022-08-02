@@ -13,9 +13,9 @@
 ],
  
 "homeItemsData" : [
-    {"icon":"Home","dropIcon":"enquiery","linkRef":"/","id":1},
-    {"icon":"Our Specialities","dropIcon":"doctors","linkRef":"/speciality","id":2},
-    {"icon":"About Us","dropIcon":"emergency","linkRef":"/about","id":3}
+    {"icon":"Home","dropIcon":"Booking","dropIconLink":"/booking","linkRef":"/","id":1},
+    {"icon":"Our Specialities","dropIcon":"doctors","dropIconLink":"/doctors","linkRef":"/speciality","id":2},
+    {"icon":"About Us","dropIcon":"emergency","dropIconLink":"/emergency","linkRef":"/about","id":3}
 
     ],
 

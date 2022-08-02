@@ -8,18 +8,20 @@ type logreducer = {
 }
 
 const initialState = {
-    isAuthenticated: false,
-    adminInfo : {email:'admin97@gmail.com',password:'admin97'}
+    isAuthenticated: localStorage.getItem('authlogin') || false
+    // adminInfo : {email:'admin97@gmail.com',password:'admin97'}
 };
 
 const authReducer = (state = initialState,action:logreducer) => {
     switch(action.type) {
         case LOGIN_SUCCESS:
+            localStorage.setItem('authlogin',true as any)
             return{
                 ...state,
                 isAuthenticated:true 
             }
         case LOGOUT_SUCCESS :
+            localStorage.setItem('authlogin',false as any)
             return{
                 ...state,
                 isAuthenticated:false,
